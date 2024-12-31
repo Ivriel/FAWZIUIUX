@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+  font-family: "Poppins";
+}
+::selection{
+  background-color: #FD6F00;
+  color: white;
+}
