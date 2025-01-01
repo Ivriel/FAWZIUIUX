@@ -22,7 +22,7 @@ After cloning my project, you can run:
 It will install all the modules that is needed in my project based on package.json file. You must do this to get functionally website 
 
 # About
-This project is for my industry test from rakryan. I have to make this website (slicing) from the design that they have given to me.\
+This project is for my industry test from rakryan. I have to make this website (slicing) from the design that they have given to me\
 I use Tailwind CSS for this website\
 I have spend 1 month to made this website because i have to search for idea for the backend and then i must do it
 
