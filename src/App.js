@@ -44,15 +44,16 @@ function App() {
 
   // Tambahkan Tawk.to script
   useEffect(() => {
-    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
 (function(){
 var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
 s1.async=true;
-s1.src='https://embed.tawk.to/679910e5825083258e0c60a6/1iimuk1gi';
+s1.src='https://embed.tawk.to/67991a2a3a84273260762645/1iin0se30';
 s1.charset='UTF-8';
 s1.setAttribute('crossorigin','*');
 s0.parentNode.insertBefore(s1,s0);
 })();
+<!--End of Tawk.to Script-->
   }, []); // Hanya dijalankan sekali saat komponen di-mount
 
   return (
