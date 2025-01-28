@@ -18,14 +18,17 @@ function App() {
   const ref3 = useRef(); // Projects
   const ref4 = useRef(); // Testimonials
   const ref5 = useRef(); // Contact
+
+  // Inisialisasi AOS untuk animasi
   useEffect(() => {
-  AOS.init({
-    duration: 1000, // Durasi animasi
-    once: true, // Animasi hanya muncul sekali
-  });
-}, []);
+    AOS.init({
+      duration: 1000, // Durasi animasi
+      once: true, // Animasi hanya muncul sekali
+    });
+  }, []);
+
+  // Scroll ke bagian tertentu berdasarkan 'show'
   useEffect(() => {
-    // Cek jika 'show' sudah diubah dan baru scroll setelah itu
     if (show === 'Profile') {
       ref.current?.scrollIntoView({ behavior: 'smooth' });
     } else if (show === 'Services') {
@@ -37,7 +40,21 @@ function App() {
     } else if (show === 'Contact') {
       ref5.current?.scrollIntoView({ behavior: 'smooth' });
     }
-  }, [show]);  // Hanya jalan ketika 'show' berubah, bukan saat pertama kali render
+  }, [show]);
+
+  // Tambahkan Tawk.to script
+  useEffect(() => {
+    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+    (function() {
+      var s1 = document.createElement("script");
+      s1.async = true;
+      s1.src = 'https://embed.tawk.to/YOUR_PROPERTY_ID/default'; // Ganti YOUR_PROPERTY_ID dengan ID Anda
+      s1.charset = 'UTF-8';
+      s1.setAttribute('crossorigin', '*');
+      var s0 = document.getElementsByTagName("script")[0];
+      s0.parentNode.insertBefore(s1, s0);
+    })();
+  }, []); // Hanya dijalankan sekali saat komponen di-mount
 
   return (
     <div>
@@ -51,7 +68,7 @@ function App() {
       </div>
       <Contact ref={ref5} />
       <Navigation setShow={setShow} />
-        <Footer />
+      <Footer />
     </div>
   );
 }
