@@ -31,6 +31,7 @@ I have spend 1 month to made this website because i have to search for idea for 
 2. Projects Button: You can see all and specific project that i have been finished. It's for my portfolio
 3. Email Contact: You can type and send your email. And than you will receive the email reply from me
 4. Responsive Website: You can open my website with all devices such as mobile,tablet,laptop,pc, and even a TV
+5. Customer Service: You can ask me a question on my website and i will answer it live
 
 # IMPORTANT
  - THIS WEBSITE IS ONLY FOR MY INDUSTRY ASSESMENT
